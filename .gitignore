@@ -10,6 +10,11 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# Retirar arquivos de configuracao
+.idea/
+*.iml
+out/
+
 # Package Files #
 *.jar
 *.war
