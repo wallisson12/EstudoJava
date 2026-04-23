@@ -1,6 +1,11 @@
+package pacote.teste.estudopoojava.principal;
+
 import pacote.teste.estudopoojava.modelo.ClassificacaoInterface;
 import pacote.teste.estudopoojava.modelo.Filme;
 import pacote.teste.estudopoojava.modelo.Serie;
+import pacote.teste.estudopoojava.modelo.Titulo;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,5 +35,16 @@ public class Main {
         System.out.println("\nClassificação:");
         classificacaoFilme1.exibirClassificacao();
         classificacaoSerie1.exibirClassificacao();
+
+        //Lista de objetos
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filme1);
+        listaDeFilmes.add(filme2);
+
+        //For para listas
+        for(Filme filme : listaDeFilmes){
+            System.out.println("\nFilme: " + filme.getNome());
+        }
+
     }
 }
